@@ -14,7 +14,7 @@ body {
 
 h1 {
     margin-top: 20px;
-    font-size: 62px;
+    font-size: 4rem;
     background: #121FCF;
     background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
     -webkit-background-clip: text;
@@ -22,7 +22,7 @@ h1 {
 
 }
 
-p {
+p, footer {
     color: #666;
 }
 
@@ -63,7 +63,7 @@ p {
 }
 
 #search {
-    width: 40%;
+    width: 30%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #bababa;
@@ -90,6 +90,8 @@ p {
 
 #photos {
     display: grid;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
@@ -212,3 +214,26 @@ p {
     transform: rotate(156deg);
 }
 
+
+
+
+
+
+
+@media (max-width: 400px) {
+    
+    #photos {
+        display: grid;
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+
+
+
+
+}
